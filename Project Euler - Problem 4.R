@@ -1,5 +1,5 @@
 
-# Project Euler - Problem 1 -----------
+# Project Euler - Problem 4 -----------
 
 
 # A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
@@ -17,7 +17,7 @@ is_palindrome <- function(number) {
   identical(rawnumber, rev(rawnumber))
 }
 
-# Produc6ts of all 3 digit number combinations
+# Products of all 3 digit number combinations
 df <- data.frame(vector_one,vector_two) %>% 
       expand(vector_one,vector_two) %>% 
       mutate(product = vector_one*vector_two)
